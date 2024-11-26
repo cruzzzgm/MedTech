@@ -1,0 +1,134 @@
+/* Reseta as margens e o padding de todos os elementos e define o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza o corpo da página */
+  body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f4f4f4; 
+    color: #333; 
+    line-height: 1.6; 
+  }
+  
+  /* Estiliza a seção principal (hero) */
+  .hero {
+    background-color: #4c98ef; 
+    color: white; 
+    padding: 60px 20px; 
+    text-align: center; 
+  }
+  
+  /* Estiliza o título da seção hero */
+  .hero h1 {
+    font-size: 3rem; 
+    margin-bottom: 10px; 
+  }
+  
+  /* Estiliza o parágrafo da seção hero */
+  .hero p {
+    font-size: 1.2rem; 
+    margin-bottom: 20px; 
+  }
+  
+  /* Estiliza o botão */
+  .btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: white; 
+    color: #4c98ef; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+    position: relative; 
+  }
+  
+  /* Estiliza o botão ao passar o mouse */
+  .btn:hover {
+    background-color: #4c98ef; 
+    color: white; 
+  }
+  
+  /* Estiliza a seta do botão */
+  .arrow {
+    display: inline-block; 
+    margin-left: 10px; 
+    transition: transform 0.3s ease; 
+  }
+  
+  /* Efeito de mover a seta ao passar o mouse sobre o botão */
+  .btn:hover .arrow {
+    transform: translateX(10px); 
+  }
+  
+  /* Estiliza o contêiner principal */
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+  
+  /* Estiliza a seção da equipe */
+  .team {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+  }
+  
+  /* Estiliza cada cartão de membro */
+  .member-card {
+    width: calc(25% - 20px); 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    transition: transform 0.3s ease; 
+    margin: 10px; 
+  }
+  
+  /* Efeito de levantar o cartão ao passar o mouse */
+  .member-card:hover {
+    transform: translateY(-10px); 
+  }
+  
+  /* Estiliza o ícone do membro */
+  .member-icon {
+    width: 100px; /* Tamanho do ícone (círculo) */
+    height: 100px; /* Tamanho do ícone (círculo) */
+    background-color: #4c98ef; /* Cor de fundo, se a imagem não carregar */
+    border-radius: 50%; /* Faz o formato do círculo */
+    margin: 0 auto 10px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse o limite do círculo */
+}
+
+.member-icon img {
+    width: 110px; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 100%; /* Faz a imagem ocupar toda a altura do contêiner */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+}
+
+  
+  /* Estiliza o título do membro dentro do cartão */
+  .member-card h3 {
+    color: #333; 
+    margin-bottom: 10px; 
+  }
+  
+  /* Estiliza o parágrafo com a função do membro */
+  .member-card p {
+    color: #777; 
+  }
+  
+  /* Estiliza o rodapé */
+  footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    margin-top: 20px; 
+  }
+  

@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #263138;
+    
+}
+
+#header{
+    background-color: #64c2f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 17px;
+    
+}
+
+header a{
+    text-decoration: none;
+    padding-right: 795px;
+    color: #ffff;
+    font-weight: 700;
+}
+
+header nav a{
+    color: #ffff;
+    font-weight: 600;
+    padding: 32px;
+    text-decoration: none;
+}
+
+#inicio {
+    margin-top: 60px; 
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 80px 128px 80px;
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+#pinicio{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+
+h1,
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+    padding-left: 30px;
+}
+
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.botao{
+    background-color: #46afe3;
+    border-radius: 8px; 
+    padding: 16px 32px;
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 30px;  
+}
+
+.botao-transparente{
+    background-color: transparent;
+    color: #46afe3;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+.absolute {
+    position: absolute;
+    top: 260px; 
+    left: 0;
+    width: 100%;
+    z-index: -10;
+
+}
+
+
+
+
+#Sobre{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#Sobre p{
+    margin-bottom: 50px;
+}
+
+#Sobre li{
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+#sucesso, #equipe {
+    padding: 54px 70px;
+    text-align: center;
+}
+#sucesso, #equipe img{
+    margin: 54px auto;
+}
+
+#sucesso, #equipe .paragrafo{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+
+.botao-team{
+    background-color: #46afe3;
+    border-radius: 8px; 
+    padding: 16px 32px;
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 30px;  
+}
+
+
+#duvidas{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.duvida{
+    position: relative;
+}
+.duvida h3{
+    border: 2px solid #46afe3;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo{
+    border-right: 1px solid #46afe3;
+    border-bottom: 1px solid #46afe3;
+    border-left: 1px solid #46afe3;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.duvida.ativa .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+
+}
+
+footer, .footer{
+    background-color: #8acbeb;
+    display: flex;
+    gap: 80px;
+    padding: 64px 80px;
+    justify-content: space-between;
+}
+
+footer img,
+footer .titulo{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+footer nav a{
+    color: #263138;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+footer p{
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+footer p a{
+    color: #263138;
+    text-decoration: none;
+}
+
+#copyright{
+    background-color: #263138;
+    text-align: center;
+    padding: 24px;
+    color: #ffff;
+}
+
+#copyright a{
+        color: #46afe3;
+}
